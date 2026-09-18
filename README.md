@@ -1,4 +1,4 @@
-# LYQ.DEV · 个人网站
+# QQIANG.COM · 个人网站
 
 > 没头发，但有想法。—— NO HAIR, FULL STACK
 
@@ -16,7 +16,7 @@
 
 | 想改什么 | 去哪里改 |
 | --- | --- |
-| 名字（LYQ） | `index.html` 里搜索 `LYQ`，全部替换成你的名字 |
+| 名字 | index.html 里搜索 `Qqiang`，替换成你想用的名字 |
 | 头像 | 替换 `assets/avatar.png`（方形图片即可） |
 | 产品卡片 | `index.html` 中 `#work` 区域，每个 `<article class="card">` 是一个产品 |
 | GitHub / 邮箱 / B站链接 | `#work` 的 ghost-card 和 `#contact` 的按钮，搜索 `你的ID` |
