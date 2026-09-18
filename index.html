@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LYQ.DEV — 没头发，但有想法。</title>
+  <meta name="description" content="LYQ 的个人网站：一个 Web coding 爱好者的产品小宇宙。NO HAIR, FULL STACK.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍🦲</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+SC:wght@400;500;700;900&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 自定义光标 -->
+  <div id="cursor" aria-hidden="true"></div>
+
+  <!-- 顶部导航 -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="#top">LYQ<b>*</b>DEV</a>
+      <nav class="nav-links">
+        <a href="#about">关于</a>
+        <a href="#work">产品</a>
+        <a href="#skills">技能</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <div class="status">
+        <span class="dot"></span>
+        <span class="txt">在线摸鱼中</span>
+        <span id="clock">00:00:00</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 跑马灯 -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <div class="ticker-group">
+        <span>欢迎来到我的赛博宇宙</span><em>★</em>
+        <span>100% 手工代码</span><em>★</em>
+        <span>NO HAIR, FULL STACK</span><em>★</em>
+        <span>本站由 0 根头发赞助播出</span><em>★</em>
+        <span>光头 · 强 · 有想法</span><em>★</em>
+        <span>正在加载更多想法…</span><em>★</em>
+      </div>
+      <div class="ticker-group">
+        <span>欢迎来到我的赛博宇宙</span><em>★</em>
+        <span>100% 手工代码</span><em>★</em>
+        <span>NO HAIR, FULL STACK</span><em>★</em>
+        <span>本站由 0 根头发赞助播出</span><em>★</em>
+        <span>光头 · 强 · 有想法</span><em>★</em>
+        <span>正在加载更多想法…</span><em>★</em>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-left">
+        <span class="kicker reveal">👨‍🦲 WEB CODING 爱好者 / 产品制造机</span>
+        <h1 class="reveal" data-d=".06s">没头发，<br>但有<span class="hl">想法</span>。</h1>
+        <p class="hero-sub reveal" data-d=".12s">
+          你好，我是 LYQ。一个业余写码、专业造东西的互联网手艺人。
+          这里陈列我敲出来的产品——每一个，都是我的小宇宙。
+        </p>
+        <div class="hero-cta reveal" data-d=".18s">
+          <a class="btn dark" href="#work">看产品 →</a>
+          <a class="btn" href="#contact">跟我聊聊？</a>
+        </div>
+        <p class="greeting reveal" data-d=".24s" id="greeting">💊 今日状态：加载中…</p>
+      </div>
+
+      <div class="hero-right reveal" data-d=".1s">
+        <div class="head-zone" id="headZone">
+          <div class="head-phy" id="headPhy">
+            <img id="headImg" class="head-img" src="assets/avatar.png" alt="我的光头头像">
+          </div>
+          <div class="ai-badge" id="aiBadge">AI</div>
+          <span class="sticker s1">NO HAIR, FULL STACK</span>
+          <span class="sticker s2">★ BUG FREE ★</span>
+          <span class="sticker s3">纯手工 · 0 添加</span>
+          <span class="head-count">已被戳 <b id="headCounter">0</b> 次（戳满 10 次有惊喜）</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 数据条 -->
+    <section class="stats-strip reveal">
+      <div class="stat"><b>0</b><span>根头发</span></div>
+      <div class="stat"><b>∞</b><span>个想法</span></div>
+      <div class="stat"><b>100%</b><span>手工代码</span></div>
+      <div class="stat"><b>24h</b><span>在线待机</span></div>
+    </section>
+
+    <!-- ============ 关于我 ============ -->
+    <section id="about" class="sec">
+      <div class="sec-head">
+        <span class="sec-tag reveal">WHO AM I · 我是谁</span>
+        <h2 class="reveal" data-d=".06s">一张玩家卡，认识我。</h2>
+      </div>
+      <div class="about-grid">
+        <div class="player-card reveal">
+          <div class="pc-top">
+            <img class="pc-avatar" src="assets/avatar.png" alt="LYQ 的头像">
+            <div class="pc-info">
+              <h3>LYQ</h3>
+              <p>Web Coding 爱好者 · 产品制造机</p>
+            </div>
+            <span class="lv-sticker">LV.99<br>摸鱼大师</span>
+          </div>
+          <p class="pc-status"><span class="dot"></span> 在线，正在编译某个新点子…</p>
+          <div class="stat-bars">
+            <div class="bar">
+              <div class="bar-top"><span>写代码</span><span>92%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="--w:92%"></div></div>
+            </div>
+            <div class="bar">
+              <div class="bar-top"><span>新点子产出</span><span>MAX !!</span></div>
+              <div class="bar-track"><div class="bar-fill max" style="--w:100%"></div></div>
+            </div>
+            <div class="bar">
+              <div class="bar-top"><span>摸鱼熟练度</span><span>88%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="--w:88%"></div></div>
+            </div>
+            <div class="bar">
+              <div class="bar-top"><span>发际线防御</span><span>100%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="--w:100%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="facts-box reveal" data-d=".1s">
+          <h3>冷知识 · 关于这个光头</h3>
+          <ul class="facts">
+            <li>头顶自带反光板，白天写代码从不缺照明。</li>
+            <li>Bug 见了我都绕道走——毕竟头铁。</li>
+            <li>信奉「想到就做」，哪怕做到凌晨三点。</li>
+            <li>产品清单永远比头发多。</li>
+            <li>正在偷偷升级，敬请期待。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 我的产品 ============ -->
+    <section id="work" class="sec">
+      <div class="sec-head">
+        <span class="sec-tag reveal">MY PRODUCTS · 我的作品</span>
+        <h2 class="reveal" data-d=".06s">我的小宇宙。</h2>
+        <p class="sec-sub reveal" data-d=".12s">每一件都是亲手敲出来的。排名不分先后，反正是常更状态。</p>
+      </div>
+
+      <!-- ✏️ 下面的卡片改成你自己的产品：标题 / 描述 / 标签 / 状态 / 链接 -->
+      <div class="work-grid reveal" data-d=".05s">
+        <article class="card tilt">
+          <div class="card-stripes"></div>
+          <div class="card-body">
+            <div class="card-num">01</div>
+            <span class="pill live">已上线</span>
+            <h3>产品一号</h3>
+            <p>一个解决小问题的网页工具合集，小而美，即开即用。</p>
+            <div class="card-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          </div>
+          <a class="card-link" href="#" target="_blank" rel="noopener">去看看 <i>→</i></a>
+        </article>
+
+        <article class="card tilt">
+          <div class="card-stripes"></div>
+          <div class="card-body">
+            <div class="card-num">02</div>
+            <span class="pill wip">开发中</span>
+            <h3>产品二号</h3>
+            <p>浏览器插件，把摸鱼效率提升 300%，老板看了都沉默。</p>
+            <div class="card-tags"><span>Chrome Ext</span><span>JS</span></div>
+          </div>
+          <a class="card-link" href="#" target="_blank" rel="noopener">去看看 <i>→</i></a>
+        </article>
+
+        <article class="card tilt">
+          <div class="card-stripes"></div>
+          <div class="card-body">
+            <div class="card-num">03</div>
+            <span class="pill idea">灵感中</span>
+            <h3>产品三号</h3>
+            <p>接入大模型的网页小玩具，好玩第一，实用性随缘。</p>
+            <div class="card-tags"><span>AI</span><span>API</span></div>
+          </div>
+          <a class="card-link" href="#" target="_blank" rel="noopener">去看看 <i>→</i></a>
+        </article>
+
+        <article class="card tilt">
+          <div class="card-stripes"></div>
+          <div class="card-body">
+            <div class="card-num">04</div>
+            <span class="pill pending">PENDING</span>
+            <h3>产品四号</h3>
+            <p>正在脑子里编译。预计明年发布（也可能明年再预计一次）。</p>
+            <div class="card-tags"><span>???</span><span>SECRET</span></div>
+          </div>
+          <a class="card-link" href="#" target="_blank" rel="noopener">敬请期待 <i>→</i></a>
+        </article>
+
+        <article class="card ghost-card">
+          <p class="gc-big">还有更多<br>在路上 →</p>
+          <a class="btn dark" href="https://github.com/你的ID" target="_blank" rel="noopener">GitHub 主页</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 技能 ============ -->
+    <section id="skills" class="sec">
+      <div class="sec-head">
+        <span class="sec-tag reveal">SKILL TREE · 技能树</span>
+        <h2 class="reveal" data-d=".06s">点满的技能树。</h2>
+      </div>
+
+      <div class="mrow reveal" data-d=".05s">
+        <div class="m-track">
+          <div class="m-group">
+            <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">Vue</span><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">Git</span><span class="chip">Vite</span><span class="chip">API 魔法师</span>
+          </div>
+          <div class="m-group">
+            <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">Vue</span><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">Git</span><span class="chip">Vite</span><span class="chip">API 魔法师</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mrow alt reveal" data-d=".1s">
+        <div class="m-track rev">
+          <div class="m-group">
+            <span class="chip">摸鱼学十级</span><span class="chip">发际线保护</span><span class="chip">咖啡因驱动开发</span><span class="chip">凌晨三点灵感爆发</span><span class="chip">StackOverflow 考古</span><span class="chip">与 Bug 和平共处</span><span class="chip">头皮护理专家</span>
+          </div>
+          <div class="m-group">
+            <span class="chip">摸鱼学十级</span><span class="chip">发际线保护</span><span class="chip">咖啡因驱动开发</span><span class="chip">凌晨三点灵感爆发</span><span class="chip">StackOverflow 考古</span><span class="chip">与 Bug 和平共处</span><span class="chip">头皮护理专家</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 联系 ============ -->
+    <section id="contact" class="sec contact">
+      <div class="sec-head center">
+        <span class="sec-tag reveal">CONTACT · 联系我</span>
+        <h2 class="giant reveal" data-d=".06s">有<span class="hl">想法</span>？</h2>
+        <p class="sec-sub reveal" data-d=".12s">合作、交流，或者只是想戳一下这个光头——都欢迎。</p>
+      </div>
+      <div class="cta-row reveal" data-d=".18s">
+        <!-- ✏️ 换成你自己的链接 -->
+        <a class="btn dark" href="https://github.com/你的ID" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="mailto:hi@example.com">发邮件</a>
+        <a class="btn" href="#" target="_blank" rel="noopener">B 站</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <p>© 2025 LYQ · NO HAIR, FULL STACK · <a href="#top">回到顶部 ↑</a></p>
+    <p class="foot-sub">本页面由 0 根头发与无数杯咖啡驱动 · 保留所有摸鱼权利</p>
+  </footer>
+
+  <!-- 动画开关 -->
+  <button id="motionToggle" class="motion-toggle" type="button" aria-pressed="true">🎬 动画：开</button>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
