@@ -156,7 +156,7 @@ html.has-cursor #cursor { display: block; }
 .hero h1 {
   font-family: var(--display);
   font-weight: 400;
-  font-size: clamp(2.9rem, 7.5vw, 5.4rem);
+  font-size: clamp(2.3rem, 5.6vw, 4.3rem);
   line-height: 1.2;
   margin: 26px 0 0;
 }
@@ -567,6 +567,124 @@ html.has-cursor #cursor { display: block; }
   .emoji-stage { grid-template-columns: 1fr; }
   .emoji-stamp { display: none; }
 }
+
+/* ---------- 人格宣言 ---------- */
+.persona {
+  max-width: 900px; margin: 0 auto;
+  padding: 120px 24px 30px;
+  text-align: center;
+}
+.persona h2 {
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(2.6rem, 6.5vw, 4.6rem);
+  line-height: 1.25;
+}
+.persona p {
+  margin-top: 22px;
+  font-weight: 700; font-size: 1.05rem;
+  opacity: .8;
+}
+
+/* ---------- 我玩过 ---------- */
+.played-notice {
+  margin-top: 18px;
+  font-weight: 500; opacity: .85;
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+}
+.played-notice .pill { position: static; }
+.played-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 26px;
+}
+.played-card {
+  position: relative; display: flex; flex-direction: column;
+  background: #111; color: var(--paper);
+  border: 4px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 8px 8px 0 var(--yellow);
+  padding: 22px;
+}
+.played-card .pc-top {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
+}
+.played-card h3 {
+  font-family: var(--display); font-weight: 400;
+  font-size: 1.35rem; color: var(--yellow); line-height: 1.3;
+}
+.played-card .pill { position: static; box-shadow: 3px 3px 0 rgba(255,255,255,.25); }
+.pc-desc { margin-top: 10px; font-size: .95rem; opacity: .85; }
+.pc-author { margin-top: 6px; font-size: .8rem; opacity: .6; font-weight: 700; }
+.pc-quote {
+  margin-top: 14px; margin-bottom: 16px;
+  background: rgba(255, 255, 255, .07);
+  border-left: 4px solid var(--yellow);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: .9rem; line-height: 1.6;
+}
+.pc-quote b { color: var(--yellow); }
+.pc-actions {
+  display: flex; gap: 10px; flex-wrap: wrap;
+  margin-top: auto; padding-top: 16px;
+  border-top: 2px dashed rgba(255, 255, 255, .2);
+}
+.pc-actions a {
+  color: var(--yellow); font-weight: 900; font-size: .88rem;
+  text-decoration: none;
+  border: 2.5px solid var(--yellow);
+  border-radius: 8px;
+  padding: .35em .9em;
+  transition: .15s;
+}
+.pc-actions a:hover { background: var(--yellow); color: var(--ink); }
+
+/* ---------- 玩码场 ---------- */
+.wancode-band {
+  max-width: 1200px; margin: 0 auto;
+  padding: 56px 44px;
+  background: var(--ink); color: var(--paper);
+  border-radius: 20px;
+  box-shadow: 12px 12px 0 var(--yellow);
+  display: grid; grid-template-columns: 1.25fr .75fr;
+  gap: 30px; align-items: center;
+}
+.wancode-en { letter-spacing: .22em; font-weight: 900; font-size: .8rem; opacity: .55; }
+.wancode-band h2 {
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  color: var(--yellow); margin-top: 8px;
+}
+.wancode-slogan { font-weight: 900; font-size: 1.1rem; margin-top: 14px; }
+.wancode-band p { margin-top: 10px; opacity: .9; }
+.wancode-note { font-size: .85rem; opacity: .55; }
+.wancode-cta { display: flex; justify-content: center; }
+@media (max-width: 920px) {
+  .wancode-band { grid-template-columns: 1fr; padding: 40px 26px; }
+}
+
+/* ---------- 关于大字 / 页脚 ---------- */
+.about-big {
+  max-width: 900px; margin: 54px auto 0;
+  text-align: center;
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1.6;
+}
+.foot-keep {
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  margin-bottom: 10px;
+}
+.nav-cta {
+  font-weight: 900; font-size: .85rem;
+  background: var(--yellow); color: var(--ink);
+  border: 3px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
+  padding: .35em .8em;
+  rotate: -2deg;
+  transition: .15s;
+}
+.nav-cta:hover { translate: -2px -2px; box-shadow: 5px 5px 0 var(--ink); }
 
 /* ---------- 联系 ---------- */
 .contact .sec { padding-bottom: 30px; }

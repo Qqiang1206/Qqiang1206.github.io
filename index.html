@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QQIANG.COM — 没头发，但有想法。</title>
-  <meta name="description" content="Qqiang 的个人网站：一个 Vibe coding 爱好者的产品小宇宙。NO HAIR, FULL STACK.">
+  <title>光头Qqiang — AI Coding 玩家 / 产品体验者</title>
+  <meta name="description" content="光头Qqiang，AI Coding 玩家、产品体验者。自己做产品，也替大家体验 Vibe Coding 做出来的各种产品。">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,17 +20,16 @@
   <!-- 顶部导航 -->
   <header class="nav">
     <div class="nav-inner">
-      <a class="logo" href="#top">QQIANG<b>*</b>COM</a>
+      <a class="logo" href="#top">光头Qqiang<b>*</b></a>
       <nav class="nav-links">
-        <a href="#about">关于</a>
-        <a href="#work">产品</a>
-        <a href="#skills">技能</a>
-        <a href="#emoji">表情</a>
-        <a href="#contact">联系</a>
+        <a href="#work">我做的</a>
+        <a href="#played">我玩过</a>
+        <a href="#wancode">玩码场</a>
+        <a class="nav-cta" href="#contact">提交产品 →</a>
       </nav>
       <div class="status">
         <span class="dot"></span>
-        <span class="txt">在线摸鱼中</span>
+        <span class="txt">正在用 AI Coding 搞事情</span>
         <span id="clock">00:00:00</span>
       </div>
     </div>
@@ -41,37 +40,34 @@
     <div class="ticker-track">
       <div class="ticker-group">
         <span>欢迎来到我的赛博宇宙</span><em>★</em>
-        <span>100% 手工代码</span><em>★</em>
+        <span>0 根头发，∞ 个想法</span><em>★</em>
         <span>NO HAIR, FULL STACK</span><em>★</em>
-        <span>本站由 0 根头发赞助播出</span><em>★</em>
+        <span>自己做产品，也替大家玩产品</span><em>★</em>
         <span>光头Qqiang · 有想法</span><em>★</em>
-        <span>正在加载更多想法…</span><em>★</em>
+        <span>KEEP BUILDING</span><em>★</em>
       </div>
       <div class="ticker-group">
         <span>欢迎来到我的赛博宇宙</span><em>★</em>
-        <span>100% 手工代码</span><em>★</em>
+        <span>0 根头发，∞ 个想法</span><em>★</em>
         <span>NO HAIR, FULL STACK</span><em>★</em>
-        <span>本站由 0 根头发赞助播出</span><em>★</em>
+        <span>自己做产品，也替大家玩产品</span><em>★</em>
         <span>光头Qqiang · 有想法</span><em>★</em>
-        <span>正在加载更多想法…</span><em>★</em>
+        <span>KEEP BUILDING</span><em>★</em>
       </div>
     </div>
   </div>
 
   <main id="top">
 
-    <!-- ============ HERO ============ -->
+    <!-- ============ 01 HERO ============ -->
     <section class="hero">
       <div class="hero-left">
-        <span class="kicker reveal">👨‍🦲 VIBE CODING 爱好者 / 产品制造机</span>
-        <h1 class="reveal" data-d=".06s">没头发，<br>但有<span class="hl">想法</span>。</h1>
-        <p class="hero-sub reveal" data-d=".12s">
-          你好，我是光头Qqiang。一个业余写码、专业造东西的互联网手艺人。
-          这里陈列我敲出来的产品——每一个，都是我的小宇宙。
-        </p>
+        <span class="kicker reveal">👨‍🦲 VIBE CODING 玩家 / 产品体验者</span>
+        <h1 class="reveal" data-d=".06s">我不是程序员。<br>我只是疯狂地用 <span class="hl">Vibe Coding</span>。</h1>
+        <p class="hero-sub reveal" data-d=".12s">自己做产品，也替大家玩产品。</p>
         <div class="hero-cta reveal" data-d=".18s">
-          <a class="btn dark" href="#work">看产品 →</a>
-          <a class="btn" href="#contact">跟我聊聊？</a>
+          <a class="btn dark" href="#played">看看我最近在玩什么 →</a>
+          <a class="btn" href="#work">看看我做的东西</a>
         </div>
         <p class="greeting reveal" data-d=".24s" id="greeting">💊 今日状态：加载中…</p>
       </div>
@@ -82,81 +78,26 @@
             <img id="headImg" class="head-img" src="assets/head-hard-circle.png" alt="我的光头头像">
           </div>
           <div class="ai-badge" id="aiBadge">AI</div>
-          <span class="sticker s1">NO HAIR, FULL STACK</span>
-          <span class="sticker s2">★ BUG FREE ★</span>
-          <span class="sticker s3">纯手工 · 0 添加</span>
           <span class="head-count">已被戳 <b id="headCounter">0</b> 次（戳满 10 次有惊喜）</span>
         </div>
       </div>
     </section>
 
-    <!-- 数据条 -->
-    <section class="stats-strip reveal">
-      <div class="stat"><b>0</b><span>根头发</span></div>
-      <div class="stat"><b>∞</b><span>个想法</span></div>
-      <div class="stat"><b>100%</b><span>手工代码</span></div>
-      <div class="stat"><b>24h</b><span>在线待机</span></div>
+    <!-- ============ 02 人格宣言 ============ -->
+    <section class="persona">
+      <h2 class="reveal">0 根头发。<span class="hl">∞ 个想法。</span></h2>
+      <p class="reveal" data-d=".1s">一个产品经理。一个 Vibe Coding 重度用户。一个喜欢把「这个能不能做？」变成「已经上线了」的人。</p>
     </section>
 
-    <!-- ============ 关于我 ============ -->
-    <section id="about" class="sec">
-      <div class="sec-head">
-        <span class="sec-tag reveal">WHO AM I · 我是谁</span>
-        <h2 class="reveal" data-d=".06s">一张玩家卡，认识我。</h2>
-      </div>
-      <div class="about-grid">
-        <div class="player-card reveal">
-          <div class="pc-top">
-            <img class="pc-avatar" src="assets/head-hard-circle.png" alt="Qqiang 的头像">
-            <div class="pc-info">
-              <h3>光头Qqiang</h3>
-              <p>Vibe Coding 爱好者 · 产品制造机</p>
-            </div>
-            <span class="lv-sticker">LV.99<br>摸鱼大师</span>
-          </div>
-          <p class="pc-status"><span class="dot"></span> 在线，正在编译某个新点子…</p>
-          <div class="stat-bars">
-            <div class="bar">
-              <div class="bar-top"><span>写代码</span><span>92%</span></div>
-              <div class="bar-track"><div class="bar-fill" style="--w:92%"></div></div>
-            </div>
-            <div class="bar">
-              <div class="bar-top"><span>新点子产出</span><span>MAX !!</span></div>
-              <div class="bar-track"><div class="bar-fill max" style="--w:100%"></div></div>
-            </div>
-            <div class="bar">
-              <div class="bar-top"><span>摸鱼熟练度</span><span>88%</span></div>
-              <div class="bar-track"><div class="bar-fill" style="--w:88%"></div></div>
-            </div>
-            <div class="bar">
-              <div class="bar-top"><span>发际线防御</span><span>100%</span></div>
-              <div class="bar-track"><div class="bar-fill" style="--w:100%"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="facts-box reveal" data-d=".1s">
-          <h3>冷知识 · 关于这个光头</h3>
-          <ul class="facts">
-            <li>头顶自带反光板，白天写代码从不缺照明。</li>
-            <li>Bug 见了我都绕道走——毕竟头铁。</li>
-            <li>信奉「想到就做」，哪怕做到凌晨三点。</li>
-            <li>产品清单永远比头发多。</li>
-            <li>正在偷偷升级，敬请期待。</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 我的产品 ============ -->
+    <!-- ============ 03 我做的 ============ -->
     <section id="work" class="sec">
       <div class="sec-head">
-        <span class="sec-tag reveal">MY PRODUCTS · 我的作品</span>
-        <h2 class="reveal" data-d=".06s">我的小宇宙。</h2>
-        <p class="sec-sub reveal" data-d=".12s">每一件都是亲手敲出来的。排名不分先后，反正是常更状态。</p>
+        <span class="sec-tag reveal">MY BUILDS · 我做的</span>
+        <h2 class="reveal" data-d=".06s">我又造了几个东西。</h2>
+        <p class="sec-sub reveal" data-d=".12s">想到就做。能上线就上线。用真实反馈替代脑内评审。</p>
       </div>
 
-      <!-- ✏️ 下面的卡片改成你自己的产品：标题 / 描述 / 标签 / 状态 / 链接 -->
+      <!-- ✏️ 下面的卡片改成你自己的产品：标题 / 一句话 / 标签 / 状态 / 链接 -->
       <div class="work-grid reveal" data-d=".05s">
         <article class="card tilt">
           <div class="card-stripes"></div>
@@ -164,8 +105,8 @@
             <div class="card-num">01</div>
             <span class="pill live">已上线</span>
             <h3>产品一号</h3>
-            <p>一个解决小问题的网页工具合集，小而美，即开即用。</p>
-            <div class="card-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <p>本来只是想试一下，结果做成了。</p>
+            <div class="card-tags"><span>Vibe Coding</span><span>两周上线</span></div>
           </div>
           <a class="card-link" href="#" target="_blank" rel="noopener">去看看 <i>→</i></a>
         </article>
@@ -176,8 +117,8 @@
             <div class="card-num">02</div>
             <span class="pill wip">开发中</span>
             <h3>产品二号</h3>
-            <p>浏览器插件，把摸鱼效率提升 300%，老板看了都沉默。</p>
-            <div class="card-tags"><span>Chrome Ext</span><span>JS</span></div>
+            <p>又一个「应该很简单吧」的项目。</p>
+            <div class="card-tags"><span>Vibe Coding</span><span>周末产物</span></div>
           </div>
           <a class="card-link" href="#" target="_blank" rel="noopener">去看看 <i>→</i></a>
         </article>
@@ -188,8 +129,8 @@
             <div class="card-num">03</div>
             <span class="pill idea">灵感中</span>
             <h3>产品三号</h3>
-            <p>接入大模型的网页小玩具，好玩第一，实用性随缘。</p>
-            <div class="card-tags"><span>AI</span><span>API</span></div>
+            <p>想到一个小问题，就顺手做了。</p>
+            <div class="card-tags"><span>Idea</span><span>小工具</span></div>
           </div>
           <a class="card-link" href="#" target="_blank" rel="noopener">去看看 <i>→</i></a>
         </article>
@@ -200,7 +141,7 @@
             <div class="card-num">04</div>
             <span class="pill pending">PENDING</span>
             <h3>产品四号</h3>
-            <p>正在脑子里编译。预计明年发布（也可能明年再预计一次）。</p>
+            <p>正在脑子里编译。发布日期：想好就写在这。</p>
             <div class="card-tags"><span>???</span><span>SECRET</span></div>
           </div>
           <a class="card-link" href="#" target="_blank" rel="noopener">敬请期待 <i>→</i></a>
@@ -213,20 +154,143 @@
       </div>
     </section>
 
-    <!-- ============ 技能 ============ -->
-    <section id="skills" class="sec">
+    <!-- ============ 04 我玩过 ============ -->
+    <section id="played" class="sec">
       <div class="sec-head">
-        <span class="sec-tag reveal">SKILL TREE · 技能树</span>
-        <h2 class="reveal" data-d=".06s">点满的技能树。</h2>
+        <span class="sec-tag reveal">QQIANG TESTED · 我玩过</span>
+        <h2 class="reveal" data-d=".06s">我玩过。</h2>
+        <p class="sec-sub reveal" data-d=".12s">Vibe Coding 做出来的东西太多了。先替你玩一遍。</p>
+        <p class="played-notice reveal" data-d=".18s"><span class="pill wip">占位 · 待替换</span> 以下为示例卡，第一批真实实测正在路上。也欢迎直接把产品丢给我。</p>
+      </div>
+
+      <div class="played-grid reveal" data-d=".05s">
+        <!-- ✏️ 换成真实体验记录：产品名 / 一句话 / 作者 / 状态 / 实测感受 / 链接 -->
+        <article class="played-card">
+          <div class="pc-top">
+            <h3>产品A · 小工具</h3>
+            <span class="pill live">LIVE</span>
+          </div>
+          <p class="pc-desc">用 Vibe Coding 做的记账小工具。</p>
+          <p class="pc-author">作者：@创作者A</p>
+          <blockquote class="pc-quote"><b>Qqiang 实测</b><br>“我用了 20 分钟，最有意思的是它把「记不住」这件事直接干掉了。”</blockquote>
+          <div class="pc-actions">
+            <a href="#" data-placeholder>直接体验 →</a>
+            <a href="#" data-placeholder>看体验视频</a>
+          </div>
+        </article>
+
+        <article class="played-card">
+          <div class="pc-top">
+            <h3>产品B · 网页小游戏</h3>
+            <span class="pill live">LIVE</span>
+          </div>
+          <p class="pc-desc">一个 AI 生成的多人小游戏。</p>
+          <p class="pc-author">作者：@创作者B</p>
+          <blockquote class="pc-quote"><b>Qqiang 实测</b><br>“第一局就上头，第二局开始怀疑作者是不是我失散的兄弟。”</blockquote>
+          <div class="pc-actions">
+            <a href="#" data-placeholder>直接体验 →</a>
+            <a href="#" data-placeholder>看体验视频</a>
+          </div>
+        </article>
+
+        <article class="played-card">
+          <div class="pc-top">
+            <h3>产品C · 效率工具</h3>
+            <span class="pill wip">BETA</span>
+          </div>
+          <p class="pc-desc">把碎碎念自动整理成日报的小工具。</p>
+          <p class="pc-author">作者：@创作者C</p>
+          <blockquote class="pc-quote"><b>Qqiang 实测</b><br>“功能不多，但每个都刚好长在我的需求上。”</blockquote>
+          <div class="pc-actions">
+            <a href="#" data-placeholder>直接体验 →</a>
+            <a href="#" data-placeholder>看体验视频</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 05 玩码场入口 ============ -->
+    <section id="wancode" class="sec">
+      <div class="wancode-band reveal">
+        <div>
+          <p class="wancode-en">WANCODE · 第二产品 · 施工中</p>
+          <h2>玩码场</h2>
+          <p class="wancode-slogan">Vibe Coding 做出来的东西，先来这里玩一遍。</p>
+          <p>有人负责做，光头Qqiang负责玩。</p>
+          <p class="wancode-note">🚧 个人站先行，玩码场稍后就位。想第一时间提交产品？先发邮件占个位。</p>
+        </div>
+        <div class="wancode-cta">
+          <a class="btn" href="#contact">去玩码场 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 06 关于我 ============ -->
+    <section id="about" class="sec">
+      <div class="sec-head">
+        <span class="sec-tag reveal">WHO AM I · 关于我</span>
+        <h2 class="reveal" data-d=".06s">一张玩家卡，认识光头Qqiang。</h2>
+      </div>
+      <div class="about-grid">
+        <div class="player-card reveal">
+          <div class="pc-top">
+            <img class="pc-avatar" src="assets/head-hard-circle.png" alt="光头Qqiang 的头像">
+            <div class="pc-info">
+              <h3>光头Qqiang</h3>
+              <p>Vibe Coding 玩家 · 产品体验者</p>
+            </div>
+            <span class="lv-sticker">LV.99<br>上头玩家</span>
+          </div>
+          <p class="pc-status"><span class="dot"></span> 在线，正在用 AI Coding 搞事情</p>
+          <div class="stat-bars">
+            <div class="bar">
+              <div class="bar-top"><span>造产品</span><span>92%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="--w:92%"></div></div>
+            </div>
+            <div class="bar">
+              <div class="bar-top"><span>玩产品</span><span>MAX !!</span></div>
+              <div class="bar-track"><div class="bar-fill max" style="--w:100%"></div></div>
+            </div>
+            <div class="bar">
+              <div class="bar-top"><span>想法落地</span><span>88%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="--w:88%"></div></div>
+            </div>
+            <div class="bar">
+              <div class="bar-top"><span>发际线防御</span><span>100%</span></div>
+              <div class="bar-track"><div class="bar-fill" style="--w:100%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="facts-box reveal" data-d=".1s">
+          <h3>关于这个光头，只有 5 件事</h3>
+          <ul class="facts">
+            <li>以前更多做产品，现在疯狂用 AI Coding。</li>
+            <li>自己做，也到处玩。谁做了好玩的，我就去试。</li>
+            <li>信奉「想到就做」，哪怕做到凌晨三点。</li>
+            <li>做完没人用？丢给我，我来测。</li>
+            <li>产品清单永远比头发多。</li>
+          </ul>
+        </div>
+      </div>
+      <p class="about-big reveal" data-d=".1s">我不太关心「能不能做」。<br>我更关心<span class="hl">「什么时候做出来」</span>。</p>
+    </section>
+
+    <!-- ============ 07 最近上头 ============ -->
+    <section id="hyped" class="sec">
+      <div class="sec-head">
+        <span class="sec-tag reveal">CURRENTLY OBSESSED · 最近上头</span>
+        <h2 class="reveal" data-d=".06s">我最近上头的东西。</h2>
+        <p class="sec-sub reveal" data-d=".12s">只要能让我少写一点重复代码，我就想试试。</p>
       </div>
 
       <div class="mrow reveal" data-d=".05s">
         <div class="m-track">
           <div class="m-group">
-            <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">Vue</span><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">Git</span><span class="chip">Vite</span><span class="chip">API 魔法师</span>
+            <span class="chip">LLM</span><span class="chip">Agent</span><span class="chip">AI Coding</span><span class="chip">MCP</span><span class="chip">Automation</span><span class="chip">Build</span><span class="chip">Ship</span>
           </div>
           <div class="m-group">
-            <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">Vue</span><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">Git</span><span class="chip">Vite</span><span class="chip">API 魔法师</span>
+            <span class="chip">LLM</span><span class="chip">Agent</span><span class="chip">AI Coding</span><span class="chip">MCP</span><span class="chip">Automation</span><span class="chip">Build</span><span class="chip">Ship</span>
           </div>
         </div>
       </div>
@@ -234,49 +298,26 @@
       <div class="mrow alt reveal" data-d=".1s">
         <div class="m-track rev">
           <div class="m-group">
-            <span class="chip">摸鱼学十级</span><span class="chip">发际线保护</span><span class="chip">咖啡因驱动开发</span><span class="chip">凌晨三点灵感爆发</span><span class="chip">StackOverflow 考古</span><span class="chip">与 Bug 和平共处</span><span class="chip">头皮护理专家</span>
+            <span class="chip">先上线再说</span><span class="chip">少写重复代码</span><span class="chip">见好玩的就试</span><span class="chip">做完别放弃</span><span class="chip">把想法变成现实</span>
           </div>
           <div class="m-group">
-            <span class="chip">摸鱼学十级</span><span class="chip">发际线保护</span><span class="chip">咖啡因驱动开发</span><span class="chip">凌晨三点灵感爆发</span><span class="chip">StackOverflow 考古</span><span class="chip">与 Bug 和平共处</span><span class="chip">头皮护理专家</span>
+            <span class="chip">先上线再说</span><span class="chip">少写重复代码</span><span class="chip">见好玩的就试</span><span class="chip">做完别放弃</span><span class="chip">把想法变成现实</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ 光头表情包 ============ -->
-    <section id="emoji" class="sec">
-      <div class="sec-head emoji-head">
-        <div>
-          <span class="sec-tag reveal">EMOJI PACK · 光头表情包</span>
-          <h2 class="reveal" data-d=".06s">一个头，五种情绪。</h2>
-          <p class="sec-sub reveal" data-d=".12s">点击下面的脸，左边立刻换表情。据说集齐五款，可以召唤发际线。</p>
-        </div>
-        <img class="emoji-stamp reveal" data-d=".1s" src="assets/head-hard.png" alt="光头Qqiang · 硬核模式">
-      </div>
-      <div class="emoji-stage reveal" data-d=".08s">
-        <div class="emoji-preview">
-          <img id="emojiPreview" src="assets/face-01.png" alt="当前表情：标准">
-        </div>
-        <div class="emoji-grid">
-          <button class="emoji-btn active" type="button" data-name="标准"><img src="assets/face-01.png" alt="标准"><span>01 标准</span></button>
-          <button class="emoji-btn" type="button" data-name="专注"><img src="assets/face-02.png" alt="专注"><span>02 专注</span></button>
-          <button class="emoji-btn" type="button" data-name="兴奋"><img src="assets/face-03.png" alt="兴奋"><span>03 兴奋</span></button>
-          <button class="emoji-btn" type="button" data-name="得意"><img src="assets/face-04.png" alt="得意"><span>04 得意</span></button>
-          <button class="emoji-btn" type="button" data-name="上头了！"><img src="assets/face-05.png" alt="上头了！"><span>05 上头了！</span></button>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 联系 ============ -->
+    <!-- ============ 08 联系 ============ -->
     <section id="contact" class="sec contact">
       <div class="sec-head center">
         <span class="sec-tag reveal">CONTACT · 联系我</span>
-        <h2 class="giant reveal" data-d=".06s">有<span class="hl">想法</span>？</h2>
-        <p class="sec-sub reveal" data-d=".12s">合作、交流，或者只是想戳一下这个光头——都欢迎。</p>
+        <h2 class="giant reveal" data-d=".06s">有东西值得一起做？</h2>
+        <p class="sec-sub reveal" data-d=".12s">发给这个光头。做完没人用？也丢过来。</p>
       </div>
       <div class="cta-row reveal" data-d=".18s">
-        <!-- ✏️ 换成你自己的链接 -->
-        <a class="btn dark" href="https://github.com/Qqiang1206" target="_blank" rel="noopener">GitHub</a>
+        <!-- ✏️ B站链接已填，其他按需调整 -->
+        <a class="btn dark" href="mailto:290329033@qq.com?subject=提交一个%20Vibe%20Coding%20产品">提交 AI Coding 产品 →</a>
+        <a class="btn" href="https://github.com/Qqiang1206" target="_blank" rel="noopener">GitHub</a>
         <a class="btn" href="mailto:290329033@qq.com?subject=你好呀%EF%BC%8C%E4%BB%8E%E4%BD%A0%E7%BD%91%E7%AB%99%E6%9D%A5%E7%9A%84">发邮件</a>
         <a class="btn" href="https://space.bilibili.com/640872235" target="_blank" rel="noopener">B 站</a>
       </div>
@@ -285,8 +326,9 @@
   </main>
 
   <footer class="foot">
-    <p>© 2025 QQIANG · NO HAIR, FULL STACK · <a href="#top">回到顶部 ↑</a></p>
-    <p class="foot-sub">本页面由 0 根头发与无数杯咖啡驱动 · 保留所有摸鱼权利</p>
+    <p class="foot-keep">KEEP <span class="hl">BUILDING</span>.</p>
+    <p>光头Qqiang · AI Coding Addict · qqiang.com · <a href="#top">回到顶部 ↑</a></p>
+    <p class="foot-sub">本网站由 AI、想法和 0 根头发驱动 · 保留所有摸鱼权利</p>
   </footer>
 
   <!-- 动画开关 -->
