@@ -119,6 +119,26 @@
     7: '警告：再戳要掉出点子了！'
   };
 
+  /* ---------- 首屏光头：每戳一下换一张脸 ---------- */
+  const HERO_FACES = [
+    { src: 'assets/head-hard-circle.png', name: '硬核模式' },
+    { src: 'assets/face-01.png', name: '标准' },
+    { src: 'assets/face-02.png', name: '专注' },
+    { src: 'assets/face-03.png', name: '兴奋' },
+    { src: 'assets/face-04.png', name: '得意' },
+    { src: 'assets/face-05.png', name: '上头了！' }
+  ];
+  let heroFaceIdx = 0;
+  // 预加载，避免切换时闪白
+  HERO_FACES.forEach(f => { const im = new Image(); im.src = f.src; });
+
+  function nextHeroFace() {
+    if (!img) return;
+    heroFaceIdx = (heroFaceIdx + 1) % HERO_FACES.length;
+    img.src = HERO_FACES[heroFaceIdx].src;
+    img.alt = '我的光头头像：' + HERO_FACES[heroFaceIdx].name;
+  }
+
   /* AI 字符迸发 */
   function burst() {
     if (!zone || !motionOn) return;
@@ -153,6 +173,7 @@
   function poke() {
     clicks++;
     if (counterEl) counterEl.textContent = clicks;
+    nextHeroFace(); // 戳一下，换一张脸
     if (img) { img.classList.remove('squash'); void img.offsetWidth; img.classList.add('squash'); }
     if (badge) { badge.classList.remove('pop'); void badge.offsetWidth; badge.classList.add('pop'); }
     burst();
