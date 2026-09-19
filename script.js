@@ -276,6 +276,24 @@
     });
   }
 
+  /* ---------- 光头表情包切换 ---------- */
+  const previewImg = $('#emojiPreview');
+  if (previewImg) {
+    const emojiBtns = $$('.emoji-btn');
+    emojiBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const face = btn.querySelector('img');
+        if (!face) return;
+        previewImg.src = face.src;
+        previewImg.alt = '当前表情：' + (btn.dataset.name || '');
+        previewImg.classList.remove('pop');
+        void previewImg.offsetWidth; // 重启动画
+        previewImg.classList.add('pop');
+        emojiBtns.forEach(b => b.classList.toggle('active', b === btn));
+      });
+    });
+  }
+
   /* ---------- 动画开关（右下角按钮） ---------- */
   const motionBtn = $('#motionToggle');
 

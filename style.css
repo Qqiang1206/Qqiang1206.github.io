@@ -510,6 +510,64 @@ html.has-cursor #cursor { display: block; }
 .mrow .chip:nth-child(odd)     { background: var(--yellow); }
 .mrow.alt .chip:nth-child(odd) { background: var(--pink); }
 
+/* ---------- 光头表情包 ---------- */
+.emoji-head {
+  display: flex; align-items: flex-end; justify-content: space-between; gap: 30px;
+}
+.emoji-stamp {
+  width: clamp(110px, 14vw, 170px);
+  aspect-ratio: 1; object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--ink);
+  box-shadow: 8px 8px 0 var(--yellow), 11px 11px 0 var(--ink);
+  rotate: 8deg; flex: none;
+  animation: bob 5s ease-in-out infinite;
+}
+.emoji-stage {
+  display: grid; grid-template-columns: .85fr 1.15fr;
+  gap: 30px; align-items: stretch;
+}
+.emoji-preview {
+  position: relative;
+  background: #111;
+  border: 4px solid var(--ink);
+  border-radius: 20px;
+  box-shadow: 10px 10px 0 var(--ink);
+  display: grid; place-items: center;
+  padding: 34px; min-height: 320px;
+}
+.emoji-preview::before {
+  content: 'PREVIEW';
+  position: absolute; top: 14px; left: 18px;
+  color: var(--yellow); font-weight: 900;
+  font-size: .75rem; letter-spacing: .25em; opacity: .65;
+}
+.emoji-preview img { width: min(100%, 250px); border-radius: 14px; }
+.emoji-preview img.pop { animation: emojiPop .35s cubic-bezier(.3, 1.6, .4, 1); }
+@keyframes emojiPop { 40% { scale: 1.08; rotate: -2deg; } }
+.emoji-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 16px;
+}
+.emoji-btn {
+  background: #111; color: var(--yellow);
+  border: 4px solid var(--ink);
+  border-radius: 16px;
+  box-shadow: 6px 6px 0 var(--ink);
+  padding: 14px 10px;
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  font-family: var(--body); font-weight: 900; font-size: .85rem;
+  transition: .15s; cursor: pointer;
+}
+.emoji-btn img { width: 100%; border-radius: 10px; }
+.emoji-btn:hover  { translate: -3px -3px; box-shadow: 9px 9px 0 var(--ink); }
+.emoji-btn:active { translate: 2px 2px;   box-shadow: 2px 2px 0 var(--ink); }
+.emoji-btn.active { background: var(--yellow); color: var(--ink); }
+@media (max-width: 920px) {
+  .emoji-stage { grid-template-columns: 1fr; }
+  .emoji-stamp { display: none; }
+}
+
 /* ---------- 联系 ---------- */
 .contact .sec { padding-bottom: 30px; }
 .giant {
