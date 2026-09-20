@@ -215,31 +215,39 @@
 <!-- ============ 04 提交 ============ -->
 <section class="submit-sec" id="submit">
   <div class="submit-inner">
-    <div>
+    <div class="submit-pitch">
       <span class="sec-idx">04 / Bring your product — 提交产品</span>
       <h2>做出来了？<br>扔过来。</h2>
       <p class="submit-lede">粗糙 Demo、已上线工具、需要发布和部署帮助的产品——都可以先说说看。</p>
+      <ul class="after-list">
+        <li><b>直达</b>邮件直接到光头本人，没有中间层</li>
+        <li><b>48H</b>内回复评估：能帮的怎么帮，不能帮的直说</li>
+        <li><b>排期</b>首批曝光位，按提交顺序锁定</li>
+      </ul>
       <p class="submit-tiny">提交不代表一定收录、一定体验、一定制作视频或一定上架成功。发布与部署支持需要进一步确认。</p>
     </div>
     <form class="wform" id="wancodeForm">
-      <div class="field"><label for="f-name">产品名称 *</label><input id="f-name" required placeholder="例如：我的 AI 小工具" /></div>
-      <div class="field"><label for="f-url">产品地址 *</label><input id="f-url" type="url" required placeholder="https://..." /></div>
-      <div class="field"><label for="f-type">你现在需要什么？*</label>
-        <select id="f-type">
-          <option>产品展示 / 曝光</option>
-          <option>真实体验 / 反馈</option>
-          <option>应用商店 / 扩展商店上架</option>
-          <option>Web 部署 / 服务器</option>
-          <option>综合支持（从产品到发布）</option>
-        </select>
+      <div class="wform-head"><span>Submission form · 提交表单</span><span>NO.____</span></div>
+      <div class="f-grid">
+        <div class="field"><label for="f-name">产品名称 *</label><input id="f-name" required placeholder="例如：我的 AI 小工具" /></div>
+        <div class="field"><label for="f-url">产品地址 *</label><input id="f-url" type="url" required placeholder="https://..." /></div>
+        <div class="field"><label for="f-type">你需要什么支持 *</label>
+          <select id="f-type">
+            <option>产品展示 / 曝光</option>
+            <option>真实体验 / 反馈</option>
+            <option>应用商店 / 扩展商店上架</option>
+            <option>Web 部署 / 服务器</option>
+            <option>综合支持（从产品到发布）</option>
+          </select>
+        </div>
+        <div class="field"><label for="f-status">当前状态</label>
+          <select id="f-status">
+            <option>概念</option><option>Demo</option><option selected>测试中</option><option>可体验</option><option>已发布</option><option>暂停运行</option>
+          </select>
+        </div>
+        <div class="field"><label for="f-author">作者昵称</label><input id="f-author" placeholder="例如：@你的名字" /></div>
+        <div class="field"><label for="f-contact">联系方式 *</label><input id="f-contact" required placeholder="邮箱或微信" /></div>
       </div>
-      <div class="field"><label for="f-status">当前状态</label>
-        <select id="f-status">
-          <option>概念</option><option>Demo</option><option selected>测试中</option><option>可体验</option><option>已发布</option><option>暂停运行</option>
-        </select>
-      </div>
-      <div class="field"><label for="f-author">作者昵称</label><input id="f-author" placeholder="例如：@你的名字" /></div>
-      <div class="field"><label for="f-contact">联系方式 *</label><input id="f-contact" required placeholder="邮箱或微信" /></div>
       <div class="field"><label for="f-note">补充说明</label><textarea id="f-note" placeholder="产品是做什么的？目前进行到哪一步？卡在哪里？"></textarea></div>
       <div class="check"><input id="f-auth1" type="checkbox" required /><label for="f-auth1">我同意玩码场展示我提交的产品信息（名称、简介、截图与链接）</label></div>
       <div class="check"><input id="f-auth2" type="checkbox" /><label for="f-auth2">我同意玩码场在约定范围内制作和发布体验内容</label></div>
