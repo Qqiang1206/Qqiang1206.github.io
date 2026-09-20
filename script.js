@@ -136,14 +136,9 @@
     7: '警告：再戳要掉出点子了！'
   };
 
-  /* ---------- 首屏光头：每戳一下换一张脸 ---------- */
+  /* ---------- 首屏光头 ---------- */
   const HERO_FACES = [
-    { src: 'assets/head-hard-circle.png', name: '硬核模式' },
-    { src: 'assets/face-01.png', name: '标准' },
-    { src: 'assets/face-02.png', name: '专注' },
-    { src: 'assets/face-03.png', name: '兴奋' },
-    { src: 'assets/face-04.png', name: '得意' },
-    { src: 'assets/face-05.png', name: '上头了！' }
+    { src: 'assets/ip-hero.png', name: '光头Qqiang' }
   ];
   let heroFaceIdx = 0;
   // 预加载，避免切换时闪白
@@ -190,7 +185,7 @@
   function poke() {
     clicks++;
     if (counterEl) counterEl.textContent = clicks;
-    nextHeroFace(); // 戳一下，换一张脸
+    if (HERO_FACES.length > 1) nextHeroFace(); // 戳一下，换一张脸（新表情入库后自动恢复）
     if (img) { img.classList.remove('squash'); void img.offsetWidth; img.classList.add('squash'); }
     if (badge) { badge.classList.remove('pop'); void badge.offsetWidth; badge.classList.add('pop'); }
     burst();
