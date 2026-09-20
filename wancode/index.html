@@ -15,290 +15,330 @@
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<header class="wrap">
-  <nav class="nav">
-    <a class="brand" href="#top"><span class="brand-mark">Q</span><span>玩码场<span class="muted"> / WANCODE</span></span></a>
-    <div class="nav-links">
-      <a href="#discover">发现产品</a>
-      <a href="#support">我们能帮你</a>
-      <a href="#experience">我玩过</a>
-      <a href="#ship">发布支持</a>
-      <a href="#submit">提交产品</a>
-    </div>
-    <a class="nav-cta" href="#submit">把你的产品扔过来 ↗</a>
-  </nav>
+<body id="top">
+
+<!-- 导航 -->
+<header class="nav">
+  <div class="nav-inner">
+    <a class="wordmark" href="#top">Wancode<b>*</b></a>
+    <nav class="nav-links">
+      <a href="#services">支持</a>
+      <a href="#products">产品</a>
+      <a href="#ship">上架部署</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="#submit">提交产品 →</a>
+    </nav>
+  </div>
 </header>
 
-<main>
-  <!-- ============ HERO ============ -->
-  <section class="wrap hero">
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div>
+    <p class="eyebrow reveal">Wancode — AI Coding Product Playground</p>
+    <h1 class="reveal" data-d=".06s">别让你的产品，<br>死在<span class="hl">电脑里</span>。</h1>
+    <p class="hero-copy reveal" data-d=".12s">你负责把想法做出来。玩码场负责让它被看见、被体验，并在条件允许时，继续走向发布和真实运行。</p>
+    <div class="hero-cta reveal" data-d=".18s">
+      <a class="btn-solid" href="#submit">提交我的产品 →</a>
+      <a class="btn-line" href="#services">先看看能帮你什么 ↓</a>
+    </div>
+    <p class="hero-note reveal" data-d=".24s">EST. 2026 · BY 光头Qqiang · SOMEWHERE BETWEEN BUILD &amp; PLAY</p>
+  </div>
+  <div class="ip-wrap reveal" data-d=".1s">
+    <div class="ip-coin">
+      <img src="../assets/ip-hero.png" alt="光头Qqiang IP 形象（悬停恢复彩色）">
+      <div class="ip-badge">玩</div>
+      <div class="ip-caption">Qqiang — Player 1</div>
+    </div>
+  </div>
+</section>
+
+<!-- 跑马灯 -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Make it<b>→</b></span><span>Play it<b>→</b></span><span>Ship it<b>→</b></span><span>Feedback it<b>→</b></span><span>Repeat<b>→</b></span>
+    <span>Make it<b>→</b></span><span>Play it<b>→</b></span><span>Ship it<b>→</b></span><span>Feedback it<b>→</b></span><span>Repeat<b>→</b></span>
+    <span>Make it<b>→</b></span><span>Play it<b>→</b></span><span>Ship it<b>→</b></span><span>Feedback it<b>→</b></span><span>Repeat<b>→</b></span>
+    <span>Make it<b>→</b></span><span>Play it<b>→</b></span><span>Ship it<b>→</b></span><span>Feedback it<b>→</b></span><span>Repeat<b>→</b></span>
+  </div>
+</div>
+
+<!-- ============ 01 支持体系 ============ -->
+<section class="sec" id="services">
+  <div class="sec-head">
     <div>
-      <div class="eyebrow"><span class="dot"></span> AI CODING PRODUCT PLAYGROUND</div>
-      <h1>别让你的产品，<span class="highlight">死在电脑里。</span></h1>
-      <p class="hero-copy">你负责把想法做出来。玩码场负责让它被看见、被体验，并在条件允许时，继续走向发布和真实运行。</p>
-      <div class="actions">
-        <a class="button primary" href="#submit">提交我的产品 ↗</a>
-        <a class="button secondary" href="#discover">先逛一圈 ↓</a>
+      <span class="sec-idx">01 / Support system — 我们能帮你</span>
+      <h2>不止展示，<br>帮它往前走。</h2>
+    </div>
+    <p class="sec-desc">从基础曝光到发布、部署与基础设施支持。可以只选一项，也可以一起聊。</p>
+  </div>
+
+  <a class="srow" href="#submit">
+    <span class="s-idx">01 / Be seen</span>
+    <span>
+      <span class="s-name">让产品被看见</span><br>
+      <span class="s-desc">产品卡、创作者信息、访问链接与内容曝光，让作品先拥有一个公开的落脚点。</span>
+    </span>
+    <span class="s-go">提交展示 →</span>
+  </a>
+  <a class="srow" href="#submit">
+    <span class="s-idx">02 / Be played</span>
+    <span>
+      <span class="s-name">让产品有人玩</span><br>
+      <span class="s-desc">Qqiang 亲自体验，记录真实感受、亮点与问题，并视情况制作视频内容。</span>
+    </span>
+    <span class="s-go">申请体验 →</span>
+  </a>
+  <a class="srow" href="#submit">
+    <span class="s-idx">03 / Get shipped</span>
+    <span>
+      <span class="s-name">让产品走向发布</span><br>
+      <span class="s-desc">App Store、Google Play、浏览器扩展商店等平台的发布材料与流程协助。不承诺审核通过，但让你少走弯路。</span>
+    </span>
+    <span class="s-go">咨询上架 →</span>
+  </a>
+  <a class="srow" href="#submit">
+    <span class="s-idx">04 / Keep running</span>
+    <span>
+      <span class="s-name">让产品持续运行</span><br>
+      <span class="s-desc">Web 部署、域名、环境配置与服务器支持。资源、费用与维护范围，部署前逐项确认。</span>
+    </span>
+    <span class="s-go">咨询部署 →</span>
+  </a>
+</section>
+
+<!-- ============ 态度宣言 ============ -->
+<section class="attitude">
+  <div class="attitude-inner">
+    <div>
+      <span class="sec-idx reveal">The attitude — 态度</span>
+      <h2 class="reveal" data-d=".06s">人物可以很疯，<br>服务必须<em>很稳</em>。</h2>
+      <p class="att-lead reveal" data-d=".12s">我们不把一次体验包装成权威测评，也不把协助包装成结果保证。真实体验，清楚边界。</p>
+    </div>
+    <ul class="att-list">
+      <li class="reveal"><b>Real play / 真实体验，不端着</b><p>从真实用户视角去玩，讲好用的，也讲不好用的。体验记录是主观体验，不是专业测试报告。</p></li>
+      <li class="reveal" data-d=".08s"><b>Help / 能帮就帮，不能就说</b><p>发布、部署、服务器等服务，按产品情况和实际成本确认。不做模糊承诺。</p></li>
+      <li class="reveal" data-d=".16s"><b>Ship / 先把产品送出去</b><p>不追求一开始就做成巨型平台，先让产品流动起来，被看见、被使用、被讨论。</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 02 发现产品 ============ -->
+<section class="sec" id="products">
+  <div class="sec-head">
+    <div>
+      <span class="sec-idx">02 / Product playground — 发现产品</span>
+      <h2>这里放的，<br>都是做出来的东西。</h2>
+    </div>
+    <p class="sec-desc">第一行是真实产品；带虚线标注的是样式示例，等真实产品来替换。</p>
+  </div>
+
+  <div class="prod">
+    <span class="p-idx">NO.001</span>
+    <div>
+      <h3>ElementCopy Pro</h3>
+      <p class="p-desc">网页元素一键拾取，生成结构化 AI 提示词与上下文，复制给 AI 就能干活。Chrome/Edge 扩展 + 免费书签版。</p>
+      <div class="p-tags"><span>Browser Ext</span><span class="ok">可体验</span><span>体验中</span></div>
+    </div>
+    <a class="p-go" href="https://github.com/Qqiang1206/elementcopy" target="_blank" rel="noopener">GitHub →</a>
+  </div>
+
+  <!-- ✏️ 样例行：接入真实产品后替换 -->
+  <div class="prod sample">
+    <span class="p-idx">NO.002 · 样例</span>
+    <div>
+      <h3>你的产品</h3>
+      <p class="p-desc">提交后，这里会出现你的产品名、一句话介绍、体验记录和访问入口。</p>
+      <div class="p-tags"><span>AI Coding</span><span>待体验</span></div>
+    </div>
+    <span class="p-go">待提交</span>
+  </div>
+  <div class="prod sample">
+    <span class="p-idx">NO.003 · 样例</span>
+    <div>
+      <h3>下一个好玩的东西</h3>
+      <p class="p-desc">不管是粗糙 Demo 还是上线工具，都可以先丢过来聊聊。</p>
+      <div class="p-tags"><span>？？？</span><span>征集中</span></div>
+    </div>
+    <span class="p-go">征集中</span>
+  </div>
+</section>
+
+<!-- ============ 03 上架与部署 ============ -->
+<section class="sec" id="ship">
+  <div class="sec-head">
+    <div>
+      <span class="sec-idx">03 / Ship &amp; run — 上架与部署</span>
+      <h2>想上架？<br>想有人管部署？聊。</h2>
+    </div>
+    <p class="sec-desc">上架协助与部署支持属于专项技术服务，按产品情况与实际需求单独确认。</p>
+  </div>
+
+  <div class="platforms">
+    <span>Apple App Store</span><span>Google Play</span><span>Chrome Web Store</span><span>Edge Add-ons</span><span>Web 网站</span><span>其他平台</span>
+  </div>
+
+  <div class="ship-grid">
+    <div class="ship-col">
+      <h3>发布支持 / Get shipped</h3>
+      <ul>
+        <li>目标平台发布流程与要求梳理</li>
+        <li>发布材料检查：图标、截图、商店文案</li>
+        <li>隐私政策等上架必备项准备协助</li>
+        <li>开发者账号与产品主体归属确认</li>
+        <li>提交前后的阶段状态记录</li>
+      </ul>
+    </div>
+    <div class="ship-col">
+      <h3>部署支持 / Keep running</h3>
+      <ul>
+        <li>Web 产品部署与服务器环境配置</li>
+        <li>域名、DNS、HTTPS 配置协助</li>
+        <li>数据库、对象存储、环境变量配置</li>
+        <li>基础运行检查与故障排查</li>
+        <li>服务器资源支持（费用与规格单独确认）</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="boundary">
+    <h4>Service boundary — 服务边界</h4>
+    <p><b>平台审核由平台方决定</b>，玩码场不承诺一定审核通过。</p>
+    <p><b>证书、签名密钥和 API Key</b> 不应由平台长期持有，归属需提前确认。</p>
+    <p><b>服务器费用和资源规格</b>、流量与超额费用、备份与故障恢复责任，部署前逐项确认。</p>
+    <p><b>不默认承诺 7×24 小时运维。</b>后续维护范围单独约定。</p>
+  </div>
+</section>
+
+<!-- ============ 04 提交 ============ -->
+<section class="submit-sec" id="submit">
+  <div class="submit-inner">
+    <div>
+      <span class="sec-idx">04 / Bring your product — 提交产品</span>
+      <h2>做出来了？<br>扔过来。</h2>
+      <p class="submit-lede">粗糙 Demo、已上线工具、需要发布和部署帮助的产品——都可以先说说看。</p>
+      <p class="submit-tiny">提交不代表一定收录、一定体验、一定制作视频或一定上架成功。发布与部署支持需要进一步确认。</p>
+    </div>
+    <form class="wform" id="wancodeForm">
+      <div class="field"><label for="f-name">产品名称 *</label><input id="f-name" required placeholder="例如：我的 AI 小工具" /></div>
+      <div class="field"><label for="f-url">产品地址 *</label><input id="f-url" type="url" required placeholder="https://..." /></div>
+      <div class="field"><label for="f-type">你现在需要什么？*</label>
+        <select id="f-type">
+          <option>产品展示 / 曝光</option>
+          <option>真实体验 / 反馈</option>
+          <option>应用商店 / 扩展商店上架</option>
+          <option>Web 部署 / 服务器</option>
+          <option>综合支持（从产品到发布）</option>
+        </select>
       </div>
-      <div class="hero-note">有人负责做，光头Qqiang负责玩。/ 不保证成功，但认真体验。</div>
-    </div>
-    <div class="face-card" aria-label="光头Qqiang极简线稿形象">
-      <div class="face">
-        <div class="ear left"></div><div class="ear right"></div>
-        <div class="head"></div>
-        <div class="glasses"><div class="lens"><div class="eye"></div></div><div class="bridge"></div><div class="lens"><div class="eye"></div></div></div>
-        <div class="mouth"><div class="tooth"></div></div>
+      <div class="field"><label for="f-status">当前状态</label>
+        <select id="f-status">
+          <option>概念</option><option>Demo</option><option selected>测试中</option><option>可体验</option><option>已发布</option><option>暂停运行</option>
+        </select>
       </div>
-      <div class="scribble">疯狂体验中</div>
-      <div class="code-burst">&gt; npm run ship<br/>✓ maybe works</div>
-    </div>
-  </section>
+      <div class="field"><label for="f-author">作者昵称</label><input id="f-author" placeholder="例如：@你的名字" /></div>
+      <div class="field"><label for="f-contact">联系方式 *</label><input id="f-contact" required placeholder="邮箱或微信" /></div>
+      <div class="field"><label for="f-note">补充说明</label><textarea id="f-note" placeholder="产品是做什么的？目前进行到哪一步？卡在哪里？"></textarea></div>
+      <div class="check"><input id="f-auth1" type="checkbox" required /><label for="f-auth1">我同意玩码场展示我提交的产品信息（名称、简介、截图与链接）</label></div>
+      <div class="check"><input id="f-auth2" type="checkbox" /><label for="f-auth2">我同意玩码场在约定范围内制作和发布体验内容</label></div>
+      <button class="submit-btn" type="submit">提交产品信息 ↗</button>
+    </form>
+  </div>
+</section>
 
-  <!-- 跑马灯 -->
-  <div class="ticker" aria-hidden="true"><div class="wrap">
-    <span>MAKE IT</span><span>SHIP IT</span><span>PLAY IT</span><span>FEEDBACK IT</span><span>REPEAT</span>
-    <span>MAKE IT</span><span>SHIP IT</span><span>PLAY IT</span><span>FEEDBACK IT</span><span>REPEAT</span>
-  </div></div>
+<!-- ============ 05 FAQ ============ -->
+<section class="sec" id="faq">
+  <div class="sec-head">
+    <div>
+      <span class="sec-idx">04 / FAQ &amp; boundaries — 丑话与好处</span>
+      <h2>丑话说在前面，<br>好处也摆在明面。</h2>
+    </div>
+    <p class="sec-desc">服务有边界，体验是主观的——这些先讲清楚，合作才愉快。</p>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item"><span class="q-idx">Q1</span><div><h3>收费吗？</h3><p>产品提交、展示和基础曝光按玩码场运营规则开放，不收费。上架协助、部署、服务器资源属于专项技术服务，按产品情况和实际成本单独评估确认。</p></div></div>
+    <div class="faq-item"><span class="q-idx">Q2</span><div><h3>体验记录是专业测试报告吗？</h3><p>不是。Qqiang 实测是主观真实体验：从真实用户视角去玩，讲好用的，也讲不好用的，但不等同于专业测试报告。</p></div></div>
+    <div class="faq-item"><span class="q-idx">Q3</span><div><h3>能保证上架或审核通过吗？</h3><p>不能。平台审核由平台方决定。我们能做的是把材料、流程和细节准备好，让你少走弯路。</p></div></div>
+    <div class="faq-item"><span class="q-idx">Q4</span><div><h3>服务器是永久的吗？</h3><p>不是。资源规格、费用归属、备份方式和退出机制，都会在部署前逐项确认清楚。</p></div></div>
+    <div class="faq-item"><span class="q-idx">Q5</span><div><h3>提交了就一定被体验吗？</h3><p>不一定。会按排队情况和兴趣安排，可能需要补充材料，但每一个提交都会被认真对待。</p></div></div>
+  </div>
+</section>
 
-  <!-- ============ 01 服务体系 ============ -->
-  <section id="support" class="wrap">
-    <div class="section-head">
-      <div><div class="section-kicker">01 / Support system</div><h2>不止是展示。<br/>我们帮它往前走。</h2></div>
-      <p class="section-desc">从最基础的曝光，到发布、部署和基础设施支持。你可以只选一项，也可以一起聊。</p>
+<!-- 页脚 -->
+<footer class="foot">
+  <div class="foot-inner">
+    <div class="foot-word">玩码场<span>.</span></div>
+    <div class="foot-row">
+      <span>Wancode — AI Coding Product Playground</span>
+      <span>By 光头Qqiang</span>
+      <a href="https://qqiang.com">qqiang.com · 个人总站</a>
     </div>
-    <div class="services">
-      <article class="service"><div><div class="num">01 / BE SEEN</div><h3>让产品被看见</h3><p>产品卡、创作者信息、访问链接和内容曝光，让你的作品先拥有一个公开的落脚点。</p></div><a class="service-link" href="#submit">提交展示 →</a></article>
-      <article class="service"><div><div class="num">02 / BE PLAYED</div><h3>让产品有人玩</h3><p>Qqiang 亲自体验，记录真实感受、亮点、问题，并视情况制作视频内容。</p></div><a class="service-link" href="#submit">申请体验 →</a></article>
-      <article class="service"><div><div class="num">03 / GET SHIPPED</div><h3>让产品走向发布</h3><p>针对 App Store、Google Play、浏览器扩展商店等平台，协助准备材料和梳理发布流程。</p></div><a class="service-link" href="#submit">咨询上架 →</a></article>
-      <article class="service"><div><div class="num">04 / KEEP RUNNING</div><h3>让产品持续运行</h3><p>提供 Web 部署、域名、环境配置和服务器支持，具体资源与维护范围单独确认。</p></div><a class="service-link" href="#submit">咨询部署 →</a></article>
-    </div>
-  </section>
-
-  <!-- ============ 02 态度宣言 ============ -->
-  <section id="experience" class="wrap">
-    <div class="section-head">
-      <div><div class="section-kicker">02 / The attitude</div><h2>人物可以很疯，<br/>服务必须很稳。</h2></div>
-      <p class="section-desc">我们不把一次体验包装成权威测评，也不把协助包装成结果保证。真实体验，清楚边界。</p>
-    </div>
-    <div class="manifesto">
-      <div class="manifesto-main">
-        <h3>每一个<br/>被做出来的<br/>小东西，<br/>都值得被<em>认真看一眼</em>。</h3>
-        <p>有些产品会成功，有些会失败，还有一些只是暂时没有找到用户。玩码场想做的是：让它们至少有一次被看见、被使用、被讨论的机会。</p>
-      </div>
-      <div class="manifesto-side">
-        <div class="mini"><strong>真实体验，不端着。</strong><p>我会从真实用户视角去玩，讲好用的，也讲不好用的。</p></div>
-        <div class="mini"><strong>能帮就帮，不能就说。</strong><p>发布、部署、服务器等服务，需要根据产品情况和实际成本确认。</p></div>
-        <div class="mini"><strong>先把产品送出去。</strong><p>不追求一开始就做成巨型平台，先让产品流动起来。</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ 03 发现产品 ============ -->
-  <section id="discover" class="wrap">
-    <div class="section-head">
-      <div><div class="section-kicker">03 / Product playground</div><h2>这里放的，<br/>都是做出来的东西。</h2></div>
-      <p class="section-desc">首张卡是真实产品。其余为样式示例——你的产品提交后，就是这种卡。</p>
-    </div>
-    <div class="products">
-
-      <!-- 真实产品 -->
-      <article class="product">
-        <div class="product-cover">COPY<br/>IT</div>
-        <h3>ElementCopy Pro</h3>
-        <p class="p-desc">网页元素一键拾取，生成结构化 AI 提示词与上下文，复制给 AI 就能干活。Chrome/Edge 扩展 + 免费书签版。</p>
-        <div>
-          <span class="tag">BROWSER EXT</span><span class="tag live">可体验</span><span class="tag">体验中</span>
-        </div>
-        <a class="p-link" href="https://github.com/Qqiang1206/elementcopy" target="_blank" rel="noopener">GitHub 仓库 →</a>
-      </article>
-
-      <!-- ✏️ 样例卡：接入真实产品后替换 -->
-      <article class="product">
-        <div class="product-cover">PLAY<br/>NOW</div>
-        <h3>产品名称 / Demo 002</h3>
-        <p class="p-desc">真实体验记录、产品亮点和访问入口将沉淀在这里。</p>
-        <div>
-          <span class="tag">AI CODING</span><span class="tag">体验中</span>
-        </div>
-        <a class="p-link" href="#" data-placeholder="📌 样例卡：等你的产品来填这个位置">占位卡 · 等你 →</a>
-      </article>
-
-      <article class="product">
-        <div class="product-cover">SHIP<br/>IT</div>
-        <h3>产品名称 / Demo 003</h3>
-        <p class="p-desc">展示产品状态、作者信息、视频内容和后续支持需求。</p>
-        <div>
-          <span class="tag">工具</span><span class="tag">待体验</span>
-        </div>
-        <a class="p-link" href="#" data-placeholder="📌 样例卡：等你的产品来填这个位置">占位卡 · 等你 →</a>
-      </article>
-    </div>
-  </section>
-
-  <!-- ============ 04 发布与部署支持 ============ -->
-  <section id="ship" class="wrap">
-    <div class="section-head">
-      <div><div class="section-kicker">04 / Ship &amp; run</div><h2>想上架？想有人管部署？<br/>聊。</h2></div>
-      <p class="section-desc">上架协助和部署支持属于专项技术服务，按产品情况与实际需求单独确认。</p>
-    </div>
-    <div class="platforms">
-      <span>Apple App Store</span><span>Google Play</span><span>Chrome Web Store</span><span>Microsoft Edge Add-ons</span><span>Web 网站</span><span>其他平台</span>
-    </div>
-    <div class="ship-grid">
-      <div class="ship-box">
-        <div class="section-kicker">发布支持 / GET SHIPPED</div>
-        <h3>把材料备齐，少走弯路</h3>
-        <ul>
-          <li>目标平台发布流程与要求梳理</li>
-          <li>发布材料检查：图标、截图、商店文案</li>
-          <li>隐私政策等上架必备项准备协助</li>
-          <li>开发者账号与产品主体归属确认</li>
-          <li>提交前后的阶段状态记录</li>
-        </ul>
-      </div>
-      <div class="ship-box">
-        <div class="section-kicker">部署支持 / KEEP RUNNING</div>
-        <h3>让它稳定地跑起来</h3>
-        <ul>
-          <li>Web 产品部署与服务器环境配置</li>
-          <li>域名、DNS、HTTPS 配置协助</li>
-          <li>数据库、对象存储、环境变量配置</li>
-          <li>基础运行检查与故障排查</li>
-          <li>服务器资源支持（费用与规格单独确认）</li>
-        </ul>
-      </div>
-    </div>
-    <div class="boundary">
-      <h4>SERVICE BOUNDARY · 服务边界</h4>
-      <p><b>平台审核由平台方决定</b>，玩码场不承诺一定审核通过。</p>
-      <p><b>证书、签名密钥和 API Key</b> 不应由平台长期持有，归属需提前确认。</p>
-      <p><b>服务器费用和资源规格</b>、流量与超额费用、备份与故障恢复责任，部署前逐项确认。</p>
-      <p><b>不默认承诺 7×24 小时运维。</b>后续维护范围单独约定。</p>
-    </div>
-  </section>
-
-  <!-- ============ 05 提交产品 ============ -->
-  <section id="submit" class="wrap">
-    <div class="submit">
-      <div>
-        <div class="section-kicker">05 / Bring your product</div>
-        <h2>做出来了？<br/>那就扔过来。</h2>
-        <p class="lede">不管是一个粗糙 Demo、一个已经上线的工具，还是一个需要发布和部署帮助的产品，都可以先说说看。</p>
-        <p class="tiny">提交不代表一定收录、一定体验、一定制作视频或一定上架成功。发布与部署支持需要进一步确认。</p>
-      </div>
-      <form class="form" id="wancodeForm">
-        <div class="field"><label for="f-name">产品名称 *</label><input id="f-name" required placeholder="例如：我的 AI 小工具" /></div>
-        <div class="field"><label for="f-url">产品地址 *</label><input id="f-url" type="url" required placeholder="https://..." /></div>
-        <div class="field"><label for="f-type">你现在需要什么？*</label>
-          <select id="f-type">
-            <option>产品展示 / 曝光</option>
-            <option>真实体验 / 反馈</option>
-            <option>应用商店 / 扩展商店上架</option>
-            <option>Web 部署 / 服务器</option>
-            <option>综合支持（从产品到发布）</option>
-          </select>
-        </div>
-        <div class="field"><label for="f-status">当前状态</label>
-          <select id="f-status">
-            <option>概念</option><option>Demo</option><option selected>测试中</option><option>可体验</option><option>已发布</option><option>暂停运行</option>
-          </select>
-        </div>
-        <div class="field"><label for="f-author">作者昵称</label><input id="f-author" placeholder="例如：@你的名字" /></div>
-        <div class="field"><label for="f-contact">联系方式 *</label><input id="f-contact" required placeholder="邮箱或微信" /></div>
-        <div class="field"><label for="f-note">补充说明</label><textarea id="f-note" placeholder="产品是做什么的？目前进行到哪一步？卡在哪里？"></textarea></div>
-        <div class="check"><input id="f-auth1" type="checkbox" required /><label for="f-auth1">我同意玩码场展示我提交的产品信息（名称、简介、截图与链接）</label></div>
-        <div class="check"><input id="f-auth2" type="checkbox" /><label for="f-auth2">我同意玩码场在约定范围内制作和发布体验内容</label></div>
-        <button class="button primary" type="submit">提交产品信息 ↗</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- ============ 06 FAQ 与服务边界 ============ -->
-  <section class="wrap faq-sec">
-    <div class="section-head">
-      <div><div class="section-kicker">06 / FAQ &amp; boundaries</div><h2>丑话说在前面，<br/>好处也摆在明面。</h2></div>
-      <p class="section-desc">服务有边界，体验是主观的——这些先讲清楚，合作才愉快。</p>
-    </div>
-    <div class="faq-list">
-      <div class="faq-item"><h3>收费吗？</h3><p>产品提交、展示和基础曝光按玩码场运营规则开放，不收费。上架协助、部署、服务器资源属于专项技术服务，按产品情况和实际成本单独评估确认。</p></div>
-      <div class="faq-item"><h3>体验记录是专业测试报告吗？</h3><p>不是。Qqiang 实测是主观真实体验：从真实用户视角去玩，讲好用的，也讲不好用的，但不等同于专业测试报告。</p></div>
-      <div class="faq-item"><h3>能保证上架或审核通过吗？</h3><p>不能。平台审核由平台方决定。我们能做的是把材料、流程和细节准备好，让你少走弯路。</p></div>
-      <div class="faq-item"><h3>服务器是永久的吗？</h3><p>不是。资源规格、费用归属、备份方式和退出机制，都会在部署前逐项确认清楚。</p></div>
-      <div class="faq-item"><h3>提交了就一定被体验吗？</h3><p>不一定。会按排队情况和兴趣安排，可能需要补充材料，但每一个提交都会被认真对待。</p></div>
-    </div>
-  </section>
-</main>
-
-<footer class="wrap">
-  <div>光头Qqiang × 玩码场 / WANCODE</div>
-  <div><a href="../">qqiang.com · 个人总站</a></div>
-  <div class="muted">Make it. Play it. Ship it. Maybe.</div>
+  </div>
 </footer>
-  <div id="toast" role="status" aria-live="polite"></div>
 
-  <script>
-    (function () {
-      'use strict';
+<div id="toast" role="status" aria-live="polite"></div>
 
-      /* 滚动显现 */
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (en) {
-          if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
-        });
-      }, { threshold: 0.12 });
-      document.querySelectorAll('.reveal').forEach(function (el) {
-        el.style.transitionDelay = el.dataset.d || '0s';
-        io.observe(el);
+<script>
+  (function () {
+    'use strict';
+
+    /* 滚动显现 */
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
       });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(function (el) {
+      el.style.transitionDelay = el.dataset.d || '0s';
+      io.observe(el);
+    });
 
-      /* 占位链接提示 */
-      var toastEl = document.getElementById('toast');
-      var timer = null;
-      function toast(msg) {
-        if (!toastEl) return;
-        toastEl.textContent = msg;
-        toastEl.classList.add('show');
-        clearTimeout(timer);
-        timer = setTimeout(function () { toastEl.classList.remove('show'); }, 2800);
-      }
-      document.querySelectorAll('a[data-placeholder]').forEach(function (a) {
-        a.addEventListener('click', function (e) {
-          e.preventDefault();
-          toast(a.dataset.placeholder);
-        });
+    /* 占位链接提示 */
+    var toastEl = document.getElementById('toast');
+    var timer = null;
+    function toast(msg) {
+      if (!toastEl) return;
+      toastEl.textContent = msg;
+      toastEl.classList.add('show');
+      clearTimeout(timer);
+      timer = setTimeout(function () { toastEl.classList.remove('show'); }, 2800);
+    }
+    document.querySelectorAll('a[data-placeholder]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        toast(a.dataset.placeholder);
       });
+    });
 
-      /* 提交表单：无后端，组装成邮件直达光头邮箱 */
-      var form = document.getElementById('wancodeForm');
-      if (form) {
-        form.addEventListener('submit', function (e) {
-          e.preventDefault();
-          var v = function (id) { var el = document.getElementById(id); return el ? el.value.trim() : ''; };
-          var auth1 = document.getElementById('f-auth1').checked ? '同意' : '未勾选';
-          var auth2 = document.getElementById('f-auth2').checked ? '同意' : '未勾选';
-          var name = v('f-name');
-          var body = [
-            '产品名称：' + name,
-            '产品地址：' + v('f-url'),
-            '需要支持：' + v('f-type'),
-            '当前状态：' + v('f-status'),
-            '作者昵称：' + (v('f-author') || '未填写'),
-            '联系方式：' + v('f-contact'),
-            '补充说明：' + (v('f-note') || '无'),
-            '授权展示产品信息：' + auth1,
-            '授权制作发布体验内容：' + auth2
-          ].join('\n');
-          location.href = 'mailto:290329033@qq.com'
-            + '?subject=' + encodeURIComponent('玩码场提交：' + name)
-            + '&body=' + encodeURIComponent(body);
-          toast('📮 正在打开邮件客户端，确认后即可发送');
-        });
-      }
-    })();
-  </script>
+    /* 提交表单：无后端，组装成邮件直达光头邮箱 */
+    var form = document.getElementById('wancodeForm');
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var v = function (id) { var el = document.getElementById(id); return el ? el.value.trim() : ''; };
+        var auth1 = document.getElementById('f-auth1').checked ? '同意' : '未勾选';
+        var auth2 = document.getElementById('f-auth2').checked ? '同意' : '未勾选';
+        var name = v('f-name');
+        var body = [
+          '产品名称：' + name,
+          '产品地址：' + v('f-url'),
+          '需要支持：' + v('f-type'),
+          '当前状态：' + v('f-status'),
+          '作者昵称：' + (v('f-author') || '未填写'),
+          '联系方式：' + v('f-contact'),
+          '补充说明：' + (v('f-note') || '无'),
+          '授权展示产品信息：' + auth1,
+          '授权制作发布体验内容：' + auth2
+        ].join('\n');
+        location.href = 'mailto:290329033@qq.com'
+          + '?subject=' + encodeURIComponent('玩码场提交：' + name)
+          + '&body=' + encodeURIComponent(body);
+        toast('📮 正在打开邮件客户端，确认后即可发送');
+      });
+    }
+  })();
+</script>
 </body>
 </html>
