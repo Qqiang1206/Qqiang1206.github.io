@@ -27,6 +27,23 @@
     setInterval(tick, 1000);
   }
 
+  /* ---------- 状态彩蛋轻量轮换 ---------- */
+  const statusTxt = $('.status .txt');
+  if (statusTxt) {
+    const statuses = [
+      '正在用 AI Coding 搞事情',
+      '正在试玩一个产品',
+      '正在折腾玩码场',
+      '正在拍体验视频',
+      '正在摸鱼'
+    ];
+    let si = 0;
+    setInterval(() => {
+      si = (si + 1) % statuses.length;
+      statusTxt.textContent = statuses[si];
+    }, 8000);
+  }
+
   /* ---------- 按时段问候 ---------- */
   const greeting = $('#greeting');
   if (greeting) {
@@ -301,7 +318,7 @@
   $$('a[data-placeholder]').forEach(a => {
     a.addEventListener('click', e => {
       e.preventDefault();
-      toast('📌 占位示例：第一批真实实测正在路上，敬请期待');
+      toast(a.dataset.placeholder || '📌 占位示例：第一批真实实测正在路上，敬请期待');
     });
   });
 

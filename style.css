@@ -38,6 +38,8 @@ body {
 
 ::selection { background: var(--yellow); color: var(--ink); }
 
+:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+
 ::-webkit-scrollbar { width: 13px; }
 ::-webkit-scrollbar-track { background: var(--paper); border-left: 3px solid var(--ink); }
 ::-webkit-scrollbar-thumb { background: var(--ink); border: 3px solid var(--paper); }
